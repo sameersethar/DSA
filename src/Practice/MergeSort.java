@@ -26,9 +26,12 @@ public class MergeSort {
                 merged[x++] = arr[idx2++];
             }
         }
+        //asr
+
         while (idx1 <= mid) {
             merged[x++] = arr[idx1++];
         }
+
         while (idx2 <= ei) {
             merged[x++] = arr[idx2++];
         }
