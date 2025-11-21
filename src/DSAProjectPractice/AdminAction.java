@@ -12,8 +12,20 @@ public class AdminAction {
         this.carSnapshot = carSnapshot;
         this.oldPrice = oldPrice;
     }
+    /*
+    Adding a car
+Removing a car
+Updating a car’s price
+…an AdminAction object is created to remember what changed so the system can undo it later.
+     */
 
-    public AdminActionType getType() { return type; }
-    public Car getCarSnapshot() { return carSnapshot; }
-    public long getOldPrice() { return oldPrice; }
+    public AdminActionType getType() {
+        return type;
+    }
+    public Car getCarSnapshot() {
+        return carSnapshot;
+    }
+    public long getOldPrice() {
+        return oldPrice;
+    }
 }

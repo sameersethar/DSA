@@ -26,6 +26,12 @@ public class ActionStack {
         }
         data[++top] = action;
     }
+    /*
+    Before push (full):
+[A, B, C, D]  top = 3
+After shift:
+[B, C, D, _]  top = 2  (A is discarded)
+     */
 
     public AdminAction pop() {
         if (isEmpty()) return null;
@@ -34,4 +40,10 @@ public class ActionStack {
         top--;
         return a;
     }
+    /*
+    Stack: [A, B, C]   top = 2
+pop() returns: C
+Stack becomes: [A, B]   top = 1
+
+     */
 }
